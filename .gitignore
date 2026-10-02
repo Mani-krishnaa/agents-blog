@@ -35,3 +35,6 @@ config/app.yaml
 # local browser checks and Vercel CLI state
 .playwright-mcp/
 blog/.vercel/
+
+# local design mocks, not published
+design/
