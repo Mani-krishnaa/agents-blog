@@ -1,0 +1,37 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# dependencies / build
+node_modules/
+dist/
+*.log
+
+# confidential-derived local state: NEVER commit
+data/*
+!data/.gitkeep
+content/linkedin/*
+content/articles/*
+!content/linkedin/.gitkeep
+!content/articles/.gitkeep
+assets/images/*
+assets/videos/*
+assets/thumbnails/*
+!assets/images/.gitkeep
+!assets/videos/.gitkeep
+!assets/thumbnails/.gitkeep
+
+# user-specific config (paths, emails, sensitive terms). Commit only *.example.yaml
+config/repos.yaml
+config/privacy.yaml
+config/app.yaml
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# local browser checks and Vercel CLI state
+.playwright-mcp/
+blog/.vercel/

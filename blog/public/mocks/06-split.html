@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>6 · Split</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; display: grid; grid-template-columns: 16rem 1fr; font: 17px/1.5 ui-sans-serif, system-ui, sans-serif; }
+      aside { background: #121417; color: #f4f1ea; padding: 1.6rem 1.2rem; display: flex; flex-direction: column; gap: 1.2rem; }
+      aside h1 { font-size: 1.8rem; line-height: 1.05; font-weight: 560; margin: 0; }
+      aside p { color: #b7c4b0; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; margin: 0; }
+      aside nav { display: flex; flex-direction: column; gap: 0.45rem; }
+      aside a { color: #f4f1ea; text-decoration: none; }
+      aside a[aria-current="page"] { color: #d6e27a; }
+      .rail-links { margin-top: auto; display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.9rem; }
+      main { background: #f6f3ec; color: #1c1a17; padding: 2.2rem 2rem 3rem; }
+      main h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); letter-spacing: -0.03em; line-height: 1.15; margin: 0 0 0.6rem; }
+      article { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid #ddd6c8; max-width: 38rem; }
+      article h3 { font-size: 1.25rem; margin: 0.2rem 0; }
+      .date { color: #6e675d; font-size: 0.85rem; }
+      .back { color: #d6e27a; font-size: 0.85rem; }
+      @media (max-width: 720px) {
+        body { grid-template-columns: 1fr; }
+        aside { min-height: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <a class="back" href="./index.html">← all</a>
+      <h1>Mani Krishna</h1>
+      <p>Playwright · MCP · agents</p>
+      <nav>
+        <a href="#" aria-current="page">Posts</a>
+        <a href="#">About</a>
+        <a href="#">Search</a>
+      </nav>
+      <div class="rail-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+      </div>
+    </aside>
+    <main>
+      <h2>I connect agents to real browsers.</h2>
+      <p>Playwright does the clicking. An MCP server is the door: the agent asks for a tool, the server runs it, and the page either moves or it doesn't.</p>
+      <p>The agent will say the editor is filled. The editor still shows the stub. These notes stay with that kind of failure until the mechanism is obvious.</p>
+      <article>
+        <div class="date">1 Oct 2026</div>
+        <h3>A Monaco editor will overwrite the code you just typed</h3>
+        <p>The test set a value on a Monaco editor. An async language stub wrote a different one a moment later. The helper now waits until the value sits still, writes, and reads it back.</p>
+        <a href="#">Read the post</a>
+      </article>
+    </main>
+  </body>
+</html>

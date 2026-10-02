@@ -1,0 +1,16 @@
+# Copy to config/app.yaml (gitignored).
+# Commits are only treated as "your work" when the author matches one of these.
+identity:
+  names: []   # e.g. ["Your Name"]
+  emails: []  # e.g. ["you@example.com"]  (include every email you commit with)
+
+dashboard:
+  host: 127.0.0.1   # must be loopback
+  port: 4173
+
+discovery:
+  max_commits_per_scan: 500
+  max_diff_bytes: 200000
+  min_content_potential: 0.35
+
+data_dir: data

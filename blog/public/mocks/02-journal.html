@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2 · Journal</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #f3ecdf; color: #241910; font: 19px/1.55 "Iowan Old Style", Palatino, Georgia, serif; }
+      a { color: #8d2f1b; }
+      header, main { max-width: 40rem; margin: 0 auto; padding: 0 1.4rem; }
+      header { display: flex; justify-content: space-between; align-items: end; padding-top: 1.6rem; }
+      .mark { font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; }
+      nav a { color: #241910; text-decoration: none; margin-left: 1rem; font-size: 0.95rem; }
+      h1 { font-size: clamp(3.2rem, 8vw, 5.2rem); font-weight: 500; line-height: 0.92; letter-spacing: -0.03em; margin: 1.2rem 0 0.3rem; }
+      .rule { border: 0; border-top: 3px solid #8d2f1b; margin: 0.8rem 0 1.2rem; }
+      .kicker { font-variant: small-caps; letter-spacing: 0.08em; color: #8d2f1b; }
+      article { margin-top: 2.4rem; }
+      article h2 { font-size: 1.7rem; font-weight: 500; line-height: 1.15; margin: 0.2rem 0 0.5rem; }
+      .date { font-size: 0.9rem; color: #6d5c4d; }
+      .more { font-variant: small-caps; letter-spacing: 0.06em; }
+      .back { position: fixed; top: 0.7rem; left: 0.7rem; font-size: 0.85rem; }
+    </style>
+  </head>
+  <body>
+    <a class="back" href="./index.html">← all</a>
+    <header>
+      <div class="mark">Notes</div>
+      <nav><a href="#">Posts</a><a href="#">About</a></nav>
+    </header>
+    <main>
+      <p class="kicker">Playwright · MCP · agents</p>
+      <h1>Mani Krishna</h1>
+      <hr class="rule" />
+      <p>I connect agents to real browsers. Playwright does the clicking. An MCP server is the door: the agent asks for a tool, the server runs it, and the page either moves or it doesn't.</p>
+      <p>The agent will say the editor is filled. The editor still shows the stub. These notes stay with that kind of failure until the mechanism is obvious.</p>
+      <article>
+        <div class="date">1 October 2026</div>
+        <h2>A Monaco editor will overwrite the code you just typed</h2>
+        <p>The test set a value on a Monaco editor. An async language stub wrote a different one a moment later. The helper now waits until the value sits still, writes, and reads it back.</p>
+        <a class="more" href="#">Read the post</a>
+      </article>
+    </main>
+  </body>
+</html>

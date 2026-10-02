@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1 · Phosphor</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #070a07; color: #c8f5cf; font: 16px/1.55 ui-monospace, "SF Mono", Menlo, monospace; }
+      a { color: #7dff8a; }
+      header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+      header { display: flex; justify-content: space-between; align-items: baseline; padding-top: 1.4rem; border-bottom: 1px solid #1e3a22; }
+      nav a { color: #c8f5cf; text-decoration: none; margin-left: 1rem; }
+      nav a[aria-current="page"] { color: #7dff8a; }
+      .prompt { color: #5d8f66; }
+      h1 { font-size: 1.6rem; font-weight: 500; margin: 1.6rem 0 0.6rem; }
+      .post { margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #1e3a22; }
+      .post h2 { font-size: 1.05rem; font-weight: 500; margin: 0.4rem 0; }
+      .meta { color: #5d8f66; }
+      footer { margin-top: 3rem; padding-bottom: 2rem; color: #5d8f66; display: flex; justify-content: space-between; }
+      .back { position: fixed; top: 0.6rem; left: 0.6rem; font-size: 0.8rem; }
+    </style>
+  </head>
+  <body>
+    <a class="back" href="./index.html">← all</a>
+    <header>
+      <div><span class="prompt">~/</span> mani</div>
+      <nav>
+        <a href="#" aria-current="page">posts</a>
+        <a href="#">about</a>
+        <a href="#">search</a>
+      </nav>
+    </header>
+    <main>
+      <h1><span class="prompt">$</span> mani-krishna --agents</h1>
+      <p>I connect agents to real browsers. Playwright does the clicking. An MCP server is the door: the agent asks for a tool, the server runs it, and the page either moves or it doesn't.</p>
+      <p>The agent will say the editor is filled. The editor still shows the stub. These notes stay with that kind of failure until the mechanism is obvious.</p>
+      <article class="post">
+        <div class="meta">2026-10-01 · post</div>
+        <h2>A Monaco editor will overwrite the code you just typed</h2>
+        <p>The test set a value on a Monaco editor. An async language stub wrote a different one a moment later. The helper now waits until the value sits still, writes, and reads it back.</p>
+        <a href="#">read the post →</a>
+      </article>
+    </main>
+    <footer>
+      <span>github · linkedin · mail</span>
+      <span>exit 0</span>
+    </footer>
+  </body>
+</html>

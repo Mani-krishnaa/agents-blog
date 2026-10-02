@@ -1,0 +1,7 @@
+# Copy to config/privacy.yaml (gitignored).
+# Anything listed here is treated as confidential. Matches in public content are blocked or flagged.
+company_terms: []           # e.g. your company name and common abbreviations
+client_terms: []            # customer/client names. A match makes content PRIVATE
+internal_product_terms: []  # internal product / project / service names
+internal_domains: []        # e.g. ["corp.example.com", "internal.example.com"]
+allowlist: []               # terms you have confirmed are safe to publish
