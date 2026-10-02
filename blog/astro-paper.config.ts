@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "http://127.0.0.1:4321",
+    url: "https://mani-krishna.vercel.app",
     title: "Mani Krishna",
     description: "Playwright, MCP servers, and what happens when an agent drives a real browser.",
     author: "Mani Krishna",
-    profile: "http://127.0.0.1:4321",
+    profile: "https://mani-krishna.vercel.app",
     ogImage: "default-og.jpg",
     lang: "en",
     timezone: "Asia/Kolkata",
