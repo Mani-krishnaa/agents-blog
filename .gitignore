@@ -38,3 +38,6 @@ blog/.vercel/
 
 # local design mocks, not published
 design/
+
+# rendered preview frames
+video/out/

@@ -9,6 +9,10 @@ featured: true
 draft: false
 ---
 
+<video controls playsinline preload="metadata" poster="/videos/monaco-editor-overwrites-the-code.jpg" width="1920" height="1080" style="width:100%;height:auto;border-radius:8px">
+  <source src="/videos/monaco-editor-overwrites-the-code.mp4" type="video/mp4" />
+</video>
+
 The test was supposed to fill a code editor. It called `setValue` with the contents of a fixture file, logged success, and moved on. Sometimes the editor then showed a language stub instead of that file. The stub had not been there when `setValue` ran. It arrived afterwards, because changing the language kicks off an async load, and that load writes into the same model.
 
 Monaco does not have one editor on this screen. `monaco.editor.getEditors()` returns a list, and the code editor is index 1. The old helper checked that the list was non-empty and always wrote to index 1. It never checked that the write was still there a moment later. A green step only meant the call did not throw.

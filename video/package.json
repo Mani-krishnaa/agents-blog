@@ -1,0 +1,21 @@
+{
+  "name": "agents-blog-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:monaco": "remotion render src/index.ts MonacoOverwrite ../blog/public/videos/monaco-editor-overwrites-the-code.mp4 --codec h264 --crf 20",
+    "poster:monaco": "remotion still src/index.ts MonacoOverwrite ../blog/public/videos/monaco-editor-overwrites-the-code.jpg --frame 60 --image-format jpeg --jpeg-quality 85",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}
